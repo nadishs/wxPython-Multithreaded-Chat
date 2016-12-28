@@ -9,7 +9,7 @@ Note: currently only one client is supported. Some bugs may exist.
   * Download .zip file from github.  
   * Unzip and then run wxchatserver.py using:  
                    `python wxchatserver.py`
-  * Run wxchatclient.py using:
+  * Run wxchatclient.py using:  
                    `python wxchatclient.py`
                    
 2. **Prerequisites:**  
