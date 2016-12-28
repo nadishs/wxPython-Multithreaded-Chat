@@ -14,8 +14,8 @@ Note: currently only one client is supported. Some bugs may exist.
                    
 2. **Prerequisites:**  
  * [wxPython 3.0](https://wxpython.org/)  
- * Python 2.7.12 release
- _____________  
+ * Python 2.7.12 release  
+_____________  
 By Nadish Shajahan  
 nadishshahjahan@gmail.com  
 [https://github.com/nadishs/](https://github.com/nadishs/)  
