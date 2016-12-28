@@ -21,7 +21,7 @@ s.listen(10)
 (clientsocket,address) = s.accept()
 MessageBox.AppendText("Connection to client established...\n")
 
-def send_to_server(x):
+def send_to_client(x):
 		msg =  SendBox.GetValue()
 		
 		clientsocket.send(msg)
@@ -30,17 +30,17 @@ def send_to_server(x):
 			quit()
 			sys.exit()
 
-def get_from_server():
+def get_from_client():
 	while 1:
 		msg = clientsocket.recv(100)
 		MessageBox.AppendText("Server: " + msg+ '\n')
 
 
-sumButton.Bind(wx.EVT_BUTTON, send_to_server)
+sumButton.Bind(wx.EVT_BUTTON, send_to_client)
 
 while True:
 	try:
-		t2 = Thread(target = get_from_server)
+		t2 = Thread(target = get_from_client)
 		t3= Thread(target = app.MainLoop)
 		t2.start()
 		t3.start()
